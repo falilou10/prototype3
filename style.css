@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.banner{
+    background-image: url(img/rec.png);
+    background-size: cover;
+}
+.logo{
+    color: #fed136;
+
+}
+.bouton{
+    display: inline;
+    width: 200px;  
+}
+.studio{
+    font-size: 3em;
+    font-style: italic;
+}
+.meet{
+    font-size: 4em;
+    font-weight: bold;
+}
+.nav-link{
+    color: #fff;
+}
+.navbar-nav a:hover{
+    color:#fed136;
+    border-bottom: 1px solid #fed136;
+}
+.img-fluid1{
+    height: 230px;
+    width: 100%;
+}
+
+.img-fluid{
+    height: 130px;
+}
+
+/* -------------------timeline---------------------------- */
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+.box-timeline{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+}
+.text-box{
+    padding: 0 80px;
+}
+.box-left{
+    left:0;
+    text-align: end;
+}
+.box-right{
+    left: 41%;
+    text-align: start;
+}
+.box-timeline img{
+    position: absolute;
+    width: 25%;
+    top: 0;
+    right: -20px;
+    z-index: 10;
+}
+.box-right img{
+    left: -20px;
+}
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background: rgb(201, 199, 199);
+    left: 45%;
+    top: 0;
+    z-index: 1;
+}
+.bloc-text{
+    position: absolute;
+    left: 40%;
+    width: 130px;
+    height: 130px;
+    padding: 20px;
+}
+@media screen and (max-width: 1000px) {
+    .timeline{
+        margin: 0;
+    }
+    .timeline::after{
+        left: 30px;
+    }
+    .text-box{
+        padding: 0 25px;
+        text-align: start;
+    }
+    .box-timeline{
+        width: 100%;
+    }
+    .bloc-text{
+        left: -4px;
+        width: 75px;
+        height: 75px;
+        font-size: small;
+        padding: 5px;
+    }
+    .box-timeline img{
+        left: -5px;
+        width: 75px;
+        height: 75px
+    }
+    .box-right {
+        left: 0;
+        padding: 10px 50px;
+        margin: 0;
+    }
+}
+
+.imaage{
+    width: 220px;
+    
+}
+
+.section{
+    background-image: url(img/werr.png);
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+}
